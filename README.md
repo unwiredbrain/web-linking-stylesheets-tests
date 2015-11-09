@@ -1,12 +1,15 @@
 # Web Linking Stylesheets Tests
 
-Test cases for including stylesheets via Web Linking ([RFC 5988][RFC5988])
+Test cases for including stylesheets via [Web Linking (RFC 5988)][1]
 
-[RFC5988]: https://tools.ietf.org/html/rfc5988
+Please be aware that none of this code is production ready, and it is only meant
+for investigation and research purposes. **Use at your own risk.**
+
+[1]: https://tools.ietf.org/html/rfc5988
 
 ## Usage
 
-You'll need [Node.js](https://nodejs.org/).
+You'll need [Node.js][2].
 
 Clone this repository, then in a terminal window launch:
 
@@ -15,19 +18,23 @@ npm install
 npm start
 ```
 
-This will launch an [Express](http://expressjs.com/) server listening on port `3000`.
+This will launch an [Express][3] server listening on port `3000`.
 
-Then open http://localhost:3000/ in your web browser.
+Finally, point your web browser to your [localhost on port 3000][4].
 
 Once done, stop it with `Ctrl+C`.
 
-If you need debugging informations, launch:
+If you need debugging, launch instead:
 
 ```shell
 DEBUG=web-linking-stylesheets-tests:* npm start
 ```
 
-# License
+[2]: https://nodejs.org/
+[3]: http://expressjs.com/
+[4]: http://localhost:3000/
+
+## The fine print
 
 The MIT License (MIT)
 
@@ -50,3 +57,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+That's it. Thanks for stopping by.
+
+EOF
