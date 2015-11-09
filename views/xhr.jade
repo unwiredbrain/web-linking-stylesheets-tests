@@ -1,0 +1,13 @@
+extends layouts/test-case
+
+block content
+  h1#target #{description}
+  script.
+    setTimeout(function() {
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener('loadend', function() {
+        console.log('Resource loaded');
+      });
+      xhr.open('GET', '/xhr/resource');
+      xhr.send();
+    }, 0);

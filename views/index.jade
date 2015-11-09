@@ -1,0 +1,14 @@
+extends layouts/base
+
+block content
+  h1= description
+  p Based on 
+    a(href='https://tools.ietf.org/html/rfc5988') Web Linking (RFC 5988)
+  ul
+    li: a(href='/single') HTTP only, single relation
+    li: a(href='/multiple') HTTP only, multiple relations
+    li: a(href='/overridden') HTTP, overridden via HTML
+    li: a(href='/mixed') Mixed
+    li: a(href='/duplicated') Duplicated
+    li: a(href='/script') Script
+    li: a(href='/xhr') XHR
